@@ -4,21 +4,21 @@
 import PackageDescription
 
 let package = Package(
-    name: "IOSDesignSystem",
+    name: "DesignSystem",
     platforms: [
         .iOS(.v13)
     ],
     products: [
         .library(
-            name: "IOSDesignSystem",
-            targets: ["IOSDesignSystem"]),
+            name: "DesignSystem",
+            targets: ["DesignSystem"]),
     ],
     targets: [
         .target(
-            name: "IOSDesignSystem"),
+            name: "DesignSystem"),
         .testTarget(
-            name: "IOSDesignSystemTests",
-            dependencies: ["IOSDesignSystem"]
+            name: "DesignSystemTests",
+            dependencies: ["DesignSystem"]
         ),
     ]
 )
