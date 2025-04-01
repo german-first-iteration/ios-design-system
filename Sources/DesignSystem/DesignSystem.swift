@@ -44,5 +44,7 @@ public struct DesignSystem {
   /// ```swift
   /// let customButton = DesignSystem.Components.CustomButton()
   /// ```
-  public struct Components { }
+  public struct Components {
+    public struct Buttons {}
+  }
 }
