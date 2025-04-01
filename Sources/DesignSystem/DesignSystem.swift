@@ -29,8 +29,13 @@ public struct DesignSystem {
     /// ```
     public struct Colors {}
     
-    /// Additional subcategories like `Typography`, `Spacing`, etc.,
-    /// can be added here in the future.
+    /// `Typography` defines the standard fonts palette for the design system.
+    /// Example usage:
+    /// ```swift
+    /// let body = DesignSystem.Styles.Typography.body
+    /// ```
+    public struct Typography {}
+    
   }
   
   /// `Components` contains reusable UI elements that are built using
