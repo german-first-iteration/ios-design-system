@@ -104,6 +104,9 @@ public extension DesignSystem.Styles.Colors {
   
   // MARK: Light Theme
   static let lightBackground = Color(hex: "#FEF7FF")
+  static let lightOutline = Color(hex: "#79747E")
+  static let lightPrimary = Color(hex: "#6750A4")
+  
   
   //MARK: List of all colors for easy access
   static let primaryColors: (String, [String: Color]) = (
