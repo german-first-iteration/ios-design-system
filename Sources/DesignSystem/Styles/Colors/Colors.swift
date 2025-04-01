@@ -102,6 +102,9 @@ public extension DesignSystem.Styles.Colors {
   static let neutralVariant99 = Color(hex: "#FFFBFE")
   static let neutralVariant100 = Color(hex: "#FFFFFF")
   
+  // MARK: Light Theme
+  static let lightBackground = Color(hex: "#FEF7FF")
+  
   //MARK: List of all colors for easy access
   static let primaryColors: (String, [String: Color]) = (
     "Primary Tonal Colors",
