@@ -35,7 +35,19 @@ public struct DesignSystem {
     /// let body = DesignSystem.Styles.Typography.body
     /// ```
     public struct Typography {}
+    
+    /// `Spacers` defines the standard spacing for the design system.
+    /// Example usage:
+    /// ```swift
+    /// VSpacer.large()
+    /// ```
     public struct Spacers{}
+    
+    /// `FontWeight` defines the weights for the fonts in design system.
+    /// Example usage:
+    /// ```swift
+    /// .fontWeight(DSStyle.FontWeight.regular_400)
+    /// ```
     public struct FontWeight{}
     
   }
