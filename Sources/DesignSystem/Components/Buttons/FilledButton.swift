@@ -10,15 +10,21 @@ import SwiftUI
 public extension DesignSystem.Components.Buttons {
   struct FilledPressedButtonStyle: ButtonStyle {
     
-    public let outlineColor: Color
-    public let pressedBackgroundColor: Color
-    public let defaultBackgroundColor: Color
+    let outlineColor: Color
+    let pressedBackgroundColor: Color
+    let defaultBackgroundColor: Color
+    let width: CGFloat
+    let height: CGFloat
     
     public init(
       outlineColor: Color = DesignSystem.Styles.Colors.lightOutline,
       pressedBackgroundColor: Color = Color.clear,
-      defaultBackgroundColor: Color = DesignSystem.Styles.Colors.primary40
+      defaultBackgroundColor: Color = DesignSystem.Styles.Colors.primary40,
+      width: CGFloat = 156,
+      height: CGFloat = 40
     ) {
+      self.width = width
+      self.height = height
       self.outlineColor = outlineColor
       self.pressedBackgroundColor = pressedBackgroundColor
       self.defaultBackgroundColor = defaultBackgroundColor
