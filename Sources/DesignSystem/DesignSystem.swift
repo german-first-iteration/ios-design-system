@@ -35,6 +35,8 @@ public struct DesignSystem {
     /// let body = DesignSystem.Styles.Typography.body
     /// ```
     public struct Typography {}
+    public struct Spacers{}
+    public struct FontWeight{}
     
   }
   
