@@ -19,7 +19,7 @@ public extension DesignSystem.Components.Buttons {
       outlineColor: Color = DesignSystem.Styles.Colors.lightOutline,
       pressedBackgroundColor: Color = DesignSystem.Styles.Colors.lightPrimary.opacity(0.8),
       defaultBackgroundColor: Color = Color.clear,
-      height: CGFloat = 40
+      height: CGFloat = 50
     ) {
       self.height = height
       self.outlineColor = outlineColor
