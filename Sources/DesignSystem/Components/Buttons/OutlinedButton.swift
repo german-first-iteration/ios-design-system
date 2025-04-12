@@ -38,7 +38,11 @@ public extension DesignSystem.Components.Buttons {
           RoundedRectangle(cornerRadius: 100)
             .stroke(outlineColor, lineWidth: 2.0)
         )
-        .foregroundStyle(outlineColor)
+        .ifAvailable(iOS: 15) { view in
+          .foregroundStyle(outlineColor)
+        } fallback: { view in
+          .foregroundColor(outlineColor)
+        }
         .background(
           RoundedRectangle(cornerRadius: 100)
             .fill(isPressed ? pressedBackgroundColor : defaultBackgroundColor)
