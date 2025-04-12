@@ -13,17 +13,14 @@ public extension DesignSystem.Components.Buttons {
     let outlineColor: Color
     let pressedBackgroundColor: Color
     let defaultBackgroundColor: Color
-    let width: CGFloat
     let height: CGFloat
     
     public init(
       outlineColor: Color = DesignSystem.Styles.Colors.lightOutline,
       pressedBackgroundColor: Color = DesignSystem.Styles.Colors.lightPrimary.opacity(0.8),
       defaultBackgroundColor: Color = Color.clear,
-      width: CGFloat = 156,
       height: CGFloat = 40
     ) {
-      self.width = width
       self.height = height
       self.outlineColor = outlineColor
       self.pressedBackgroundColor = pressedBackgroundColor
@@ -35,18 +32,18 @@ public extension DesignSystem.Components.Buttons {
       
       return configuration.label
         .padding()
+        .frame(maxWidth: .infinity, minHeight: height, maxHeight: height)
         .contentShape(Rectangle())
-        .frame(width: width, height: height, alignment: .center)
         .overlay(
           RoundedRectangle(cornerRadius: 100)
             .stroke(outlineColor, lineWidth: 2.0)
         )
-        .foregroundColor(outlineColor)
+        .foregroundStyle(outlineColor)
         .background(
           RoundedRectangle(cornerRadius: 100)
             .fill(isPressed ? pressedBackgroundColor : defaultBackgroundColor)
         )
-        .animation(.easeInOut, value: 0.33)
+        .animation(.easeInOut(duration: 0.2), value: isPressed)
     }
   }
 }
