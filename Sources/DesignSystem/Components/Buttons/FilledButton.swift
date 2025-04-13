@@ -20,7 +20,6 @@ public extension DesignSystem.Components.Buttons {
       outlineColor: Color = DesignSystem.Styles.Colors.lightOutline,
       pressedBackgroundColor: Color = Color.clear,
       defaultBackgroundColor: Color = DesignSystem.Styles.Colors.primary40,
-      width: CGFloat = 156,
       height: CGFloat = 50
     ) {
       self.width = width
