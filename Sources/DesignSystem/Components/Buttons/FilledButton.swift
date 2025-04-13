@@ -33,7 +33,7 @@ public extension DesignSystem.Components.Buttons {
       return configuration.label
         .padding()
         .contentShape(Rectangle())
-        .frame(width: width, height: height, alignment: .center)
+        .frame(maxWidth: .infinity, minHeight: height, maxHeight: height)
         .overlay(
           RoundedRectangle(cornerRadius: 100)
             .stroke(outlineColor, lineWidth: 2.0)
