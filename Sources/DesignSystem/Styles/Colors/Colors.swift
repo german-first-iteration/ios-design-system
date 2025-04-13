@@ -111,6 +111,7 @@ public extension DesignSystem.Styles.Colors {
   static let lightPrimary = Color(hex: "#6750A4")
   static let lightOnSurface = Color(hex: "#1D1B20")
   static let lightOnPrimary = Color(hex: "#FFFFFF")
+  static let lightOnPrimaryPID = Color(hex: "#546E7A")
   
   //MARK: List of all colors for easy access
   static let primaryColors: (String, [String: Color]) = (
