@@ -13,7 +13,6 @@ public extension DesignSystem.Components.Buttons {
     let outlineColor: Color
     let pressedBackgroundColor: Color
     let defaultBackgroundColor: Color
-    let width: CGFloat
     let height: CGFloat
     
     public init(
@@ -22,7 +21,6 @@ public extension DesignSystem.Components.Buttons {
       defaultBackgroundColor: Color = DesignSystem.Styles.Colors.secondary90,
       height: CGFloat = 50
     ) {
-      self.width = width
       self.height = height
       self.outlineColor = outlineColor
       self.pressedBackgroundColor = pressedBackgroundColor
