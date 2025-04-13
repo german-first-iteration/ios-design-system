@@ -21,7 +21,7 @@ public extension DesignSystem.Components.Buttons {
       pressedBackgroundColor: Color = Color.clear,
       defaultBackgroundColor: Color = DesignSystem.Styles.Colors.primary40,
       width: CGFloat = 156,
-      height: CGFloat = 40
+      height: CGFloat = 50
     ) {
       self.width = width
       self.height = height
