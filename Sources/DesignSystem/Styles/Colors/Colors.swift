@@ -10,6 +10,11 @@ import SwiftUI
 /// Extension to define color styles within the DesignSystem.
 /// These colors follow a structured naming convention and can be used throughout the app for consistency.
 public extension DesignSystem.Styles.Colors {
+  static let background = Color("Background", bundle: .module)
+  static let onPrimaryPID = Color("OnPrimaryPID", bundle: .module)
+  static let onSurfaceVariant = Color("OnSurfaceVariant", bundle: .module)
+  static let outlineVariant = Color("OutlineVariant", bundle: .module)
+  static let primaryPID = Color("PrimaryPID", bundle: .module)
   
   /// The primary brand color used for main actions and highlights.
   // MARK: Primary Tonal Palette
