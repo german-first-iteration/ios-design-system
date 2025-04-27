@@ -15,6 +15,7 @@ public extension DesignSystem.Styles.Colors {
   static let onSurfaceVariant = Color("OnSurfaceVariant", bundle: .module)
   static let outlineVariant = Color("OutlineVariant", bundle: .module)
   static let primaryPID = Color("PrimaryPID", bundle: .module)
+  static let outline = Color("Outline", bundle: .module)
   
   /// The primary brand color used for main actions and highlights.
   // MARK: Primary Tonal Palette
