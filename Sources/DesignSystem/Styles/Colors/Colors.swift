@@ -13,6 +13,7 @@ public extension DesignSystem.Styles.Colors {
   static let background = Color("Background", bundle: .module)
   static let onPrimaryPID = Color("OnPrimaryPID", bundle: .module)
   static let onSurfaceVariant = Color("OnSurfaceVariant", bundle: .module)
+  static let onSurface = Color("OnSurface", bundle: .module)
   static let outlineVariant = Color("OutlineVariant", bundle: .module)
   static let primaryPID = Color("PrimaryPID", bundle: .module)
   static let outline = Color("Outline", bundle: .module)
