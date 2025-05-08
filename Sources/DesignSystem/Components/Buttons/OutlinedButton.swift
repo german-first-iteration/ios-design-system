@@ -36,7 +36,7 @@ public extension DesignSystem.Components.Buttons {
         .contentShape(Rectangle())
         .overlay(
           RoundedRectangle(cornerRadius: 100)
-            .stroke(outlineColor, lineWidth: 2.0)
+            .stroke(outlineColor, lineWidth: 1.0)
         )
         .foregroundColor(outlineColor)
         .background(
