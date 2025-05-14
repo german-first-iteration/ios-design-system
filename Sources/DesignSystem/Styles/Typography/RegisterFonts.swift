@@ -10,7 +10,7 @@ import CoreText
 import UIKit
 
 public extension UIFont {
-  public static func loadFonts() {
+  static func loadFonts() {
     registerFont(withName: "Roboto", fileExtension: "ttf")
     registerFont(withName: "Roboto-Black", fileExtension: "ttf")
     registerFont(withName: "Roboto-BlackItalic", fileExtension: "ttf")
