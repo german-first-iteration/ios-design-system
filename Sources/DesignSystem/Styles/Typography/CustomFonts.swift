@@ -9,8 +9,10 @@ import CoreGraphics
 import CoreText
 import UIKit
 
-public extension UIFont {
-  static func loadFonts() {
+public struct CustomFonts {
+  public init() { }
+  
+  public func loadFonts() {
     registerFont(withName: "Roboto", fileExtension: "ttf")
     registerFont(withName: "Roboto-Black", fileExtension: "ttf")
     registerFont(withName: "Roboto-BlackItalic", fileExtension: "ttf")
@@ -26,7 +28,7 @@ public extension UIFont {
     registerFont(withName: "Roboto-ThinItalic", fileExtension: "ttf")
   }
   
-  private static func registerFont(withName name: String, fileExtension: String) {
+  private func registerFont(withName name: String, fileExtension: String) {
     let frameworkBundle = Bundle.module
     guard let url = frameworkBundle.url(forResource: name, withExtension: fileExtension),
           let fontDataProvider = CGDataProvider(url: url as CFURL),
