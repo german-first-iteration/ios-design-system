@@ -19,6 +19,7 @@ public extension DesignSystem.Styles.Colors {
   static let outline = Color("Outline", bundle: .module)
   static let primary = Color("Primary", bundle: .module)
   static let primaryContainer = Color("PrimaryContainer", bundle: .module)
+  static let onSurfaceBrightest = Color("OnSurfaceBrightest", bundle: .module)
   
   /// The primary brand color used for main actions and highlights.
   // MARK: Primary Tonal Palette
