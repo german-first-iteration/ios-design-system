@@ -18,6 +18,7 @@ public extension DesignSystem.Styles.Colors {
   static let primaryPID = Color("PrimaryPID", bundle: .module)
   static let outline = Color("Outline", bundle: .module)
   static let primary = Color("Primary", bundle: .module)
+  static let primaryContainer = Color("PrimaryContainer", bundle: .module)
   
   /// The primary brand color used for main actions and highlights.
   // MARK: Primary Tonal Palette
