@@ -75,6 +75,7 @@ public extension DesignSystem.Components.Buttons {
           RoundedRectangle(cornerRadius: 100)
             .fill(backgroundColor)
         )
+        .disabled(true)
         .animation(.easeInOut, value: 0.33)
     }
   }
