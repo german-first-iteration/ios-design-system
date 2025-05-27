@@ -19,6 +19,8 @@ public extension DesignSystem.Styles.Colors {
   static let outline = Color("Outline", bundle: .module)
   static let primary = Color("Primary", bundle: .module)
   static let primaryContainer = Color("PrimaryContainer", bundle: .module)
+  static let secondaryContainer = Color("SecondaryContainer", bundle: .module)
+  static let onSecondaryContainer = Color("OnSecondaryContainer", bundle: .module)
   static let onSurfaceBrightest = Color("OnSurfaceBrightest", bundle: .module)
   static let inverseOnSurface = Color("InverseOnSurface", bundle: .module)
   
