@@ -50,6 +50,15 @@ public struct DesignSystem {
     /// ```
     public struct FontWeight{}
     
+    /// `Sizes` defines commonly used size constants in the Design System,
+    /// such as heights, paddings, and icon dimensions.
+    ///
+    /// Example usage:
+    /// ```swift
+    /// .frame(height: DSStyle.Sizes.buttonHeight)
+    /// ```
+    public struct Sizes {}
+    
   }
   
   /// `Components` contains reusable UI elements that are built using
