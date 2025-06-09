@@ -23,6 +23,7 @@ public extension DesignSystem.Styles.Colors {
   static let onSecondaryContainer = Color("OnSecondaryContainer", bundle: .module)
   static let onSurfaceBrightest = Color("OnSurfaceBrightest", bundle: .module)
   static let inverseOnSurface = Color("InverseOnSurface", bundle: .module)
+  static let error = Color("Error", bundle: .module)
   
   /// The primary brand color used for main actions and highlights.
   // MARK: Primary Tonal Palette
