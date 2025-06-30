@@ -1,19 +1,29 @@
 //
-//  BottomSheetView.swift
+//  BottomSheetViewWithAction.swift
 //  DesignSystem
 //
-//  Created by Muhammad Qadri on 28.05.25.
+//  Created by Muhammad Qadri on 30.06.25.
 //
+
 import SwiftUI
 
 @available(iOS 16.0, *)
-public struct BottomSheetView: View {
+public struct BottomSheetViewWithAction: View {
   let title: String
   let message: String
+  let buttonTitle: String
+  let action: () -> Void
   
-  public init(title: String, message: String) {
+  public init(
+    title: String,
+    message: String,
+    buttonTitle: String,
+    action: @escaping () -> Void
+  ) {
     self.title = title
     self.message = message
+    self.buttonTitle = buttonTitle
+    self.action = action
   }
   
   public var body: some View {
@@ -37,6 +47,20 @@ public struct BottomSheetView: View {
         .fontWeight(DesignSystem.Styles.FontWeight.regular_400)
       
       Spacer()
+      
+      Button(
+        action: action,
+        label: {
+          HStack(spacing: 8) {
+            Spacer()
+            Text(buttonTitle)
+              .font(DSTypography.Label.large)
+              .foregroundStyle(DSColor.primary)
+            Spacer()
+          }
+        })
+      .buttonStyle(DSButton.OutlinePressedButtonStyle())
+
     }
     .padding()
     .frame(height: UIScreen.main.bounds.height * 0.5)
