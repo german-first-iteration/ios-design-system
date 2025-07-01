@@ -50,6 +50,17 @@ public struct DesignSystem {
     /// ```
     public struct FontWeight{}
     
+    /// `FontKerning` defines the kerning (character spacing) values used across the design system.
+    ///
+    /// Example usage:
+    /// ```swift
+    /// Text("Hello")
+    ///     .kerning(DSStyle.FontKerning.tight)
+    /// ```
+    ///
+    /// Use these values to ensure consistent letter spacing throughout the app.
+    public struct FontKerning{}
+    
     /// `Sizes` defines commonly used size constants in the Design System,
     /// such as heights, paddings, and icon dimensions.
     ///

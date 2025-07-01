@@ -45,6 +45,8 @@ public struct BottomSheetViewWithAction: View {
         .font(DesignSystem.Styles.Typography.Body.large)
         .foregroundStyle(DesignSystem.Styles.Colors.lightPrimary)
         .fontWeight(DesignSystem.Styles.FontWeight.regular_400)
+        .kerning(DesignSystem.Styles.FontKerning.regular)
+
       
       Spacer()
       
