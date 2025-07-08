@@ -36,5 +36,8 @@ public extension DesignSystem.Styles.Sizes {
 
     /// Double extra large icon size (40pt)
     public static let xxLarge: CGFloat = 40
+    
+    /// Double extra large icon size (120pt)
+    public static let xxxLarge: CGFloat = 120
   }
 }
