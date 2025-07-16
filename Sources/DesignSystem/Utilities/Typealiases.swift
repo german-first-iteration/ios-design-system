@@ -39,7 +39,6 @@ public typealias DSIconSize = DesignSystem.Styles.Sizes.Icons
 /// ```
 public typealias DSTypography = DesignSystem.Styles.Typography
 
-
 // MARK: COMPONENTS TYPEALIASES
 
 /// `DSButton` is a shorthand alias for accessing predefined Buttons in the Design System.
@@ -49,6 +48,27 @@ public typealias DSTypography = DesignSystem.Styles.Typography
 /// DSComponent.Buttons
 /// ```
 public typealias DSButton = DSComponent.Buttons
+
+/// `DSPrimaryButton` is a shorthand alias for accessing predefined PrimaryButton in the Design System.
+///
+/// Example:
+/// ```swift
+///  DSPrimaryButton("title goes here"){
+///       performAction()
+///  }
+/// ```
+public typealias DSPrimaryButton = DesignSystem.Components.Buttons.PrimaryButton
+
+/// `DSSecondaryButton` is a shorthand alias for accessing predefined SecondaryButton in the Design System.
+///
+/// Example:
+/// ```swift
+///  DSSecondaryButton("title goes here"){
+///       performAction()
+///  }
+/// ```
+public typealias DSSecondaryButton = DesignSystem.Components.Buttons.SecondaryButton
+
 
 /// `DSComponent` is a shorthand alias for accessing reusable UI components from the Design System.
 ///
